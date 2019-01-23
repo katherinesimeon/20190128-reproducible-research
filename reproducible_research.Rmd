@@ -1,0 +1,54 @@
+---
+title: "Reproducible Research in R"
+subtitle: "rstudio::conf Lightning Talk"
+author: "Katherine Simeon"
+date: "2018/01/28"
+output:
+  xaringan::moon_reader:
+    css: ["default", "metropolis", "metropolis-fonts"]
+    seal: false
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+class: title-slide, left, middle
+
+<h1> Reproducible Research in R </h1>
+
+<br>
+
+
+<h3> Katherine Simeon <br> <em>R-Ladies Chicago</em> </h3>
+<br>
+<br>
+.small[`r fontawesome::fa("github")` [katherinesimeon](https://github.com/katherinesimeon)]  
+
+---
+class: left, middle
+
+## This is inspired by *multiple* rstudio::conf talks  
+  
+Karthik Ram - [A guide to modern reproducible data science with R](https://github.com/karthik/rstudio2019)  
+  
+Amanda Gadrow - [Writing reliable & maintainable R code](https://github.com/ajmcoqui/testingRCode)  
+  
+Mike K Smith - [The lazy & easily distracted report writer: Using rmarkdown and parametrized reports](https://github.com/MikeKSmith/RStudioConf2019)  
+  
+Charlotte & Hadley Wickham - Building Tidy Tools Workshop  
+  
+---
+
+# Research  
+  
+--
+  
+.center[<img src="https://pbs.twimg.com/media/DJ7rFL6XUAcnxLy.jpg:large" height="400px" />]  
+
+.right[Image: https://twitter.com/kirkdborne]
