@@ -5,7 +5,7 @@ author: "Katherine Simeon"
 date: "2018/01/28"
 output:
   xaringan::moon_reader:
-    css: ["default", "metropolis", "metropolis-fonts"]
+    css: ["default", "rladies", "rladies-fonts"]
     seal: false
     lib_dir: libs
     nature:
@@ -25,10 +25,13 @@ class: title-slide, left, middle
 <br>
 
 
-<h3> Katherine Simeon <br> <em>R-Ladies Chicago</em> </h3>
+<h3> Katherine Simeon <br> </h3>
+
 <br>
+.small[`r fontawesome::fa("github")` [katherinesimeon](https://github.com/katherinesimeon)] <br>
+.small[`r fontawesome::fa("researchgate")` [katherine_simeon](https://www.researchgate.net/profile/Katherine_Simeon)]  
 <br>
-.small[`r fontawesome::fa("github")` [katherinesimeon](https://github.com/katherinesimeon)]  
+<img src = "https://rladieschicago.org/img/rladies-chicago_banner_plain.jpg" height= "50px" align="right" />
 
 ---
 class: left, middle
@@ -52,3 +55,34 @@ Charlotte & Hadley Wickham - Building Tidy Tools Workshop
 .center[<img src="https://pbs.twimg.com/media/DJ7rFL6XUAcnxLy.jpg:large" height="400px" />]  
 
 .right[Image: https://twitter.com/kirkdborne]
+  
+---
+  
+# The motivation    
+  
+*Clear communication with others*   
+  
+--
+  
+* Colleagues (advisor, peers, research assistants...)     
+  
+--
+  
+* Reviewers  
+  
+--
+  
+* *(Anyone really)*
+  
+--
+  
+* Present & Future Self!   
+  
+---
+class: center, middle  
+  
+Reproducibility \(\neq\) Replicability   
+  
+---
+
+# 
