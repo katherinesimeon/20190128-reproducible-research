@@ -27,7 +27,8 @@ class: title-slide, left, middle, inverse
 
 <h3> Katherine Simeon <br> R-Ladies Chicago</h3>
 
-
+<br>
+<h4> January 28, 2019 </h4>
 
 
 ---
@@ -72,7 +73,7 @@ Research is hard!
   
 <br>
   
-## Reproducible research allows us to...  
+## In research, reproducibility allows us to...  
   
 * Clearly communicate research methods & findings    
 * Repeat & improve our techniques
@@ -161,7 +162,7 @@ SAMPLE_COMPENDIUM
   
 ---
   
-# Create a package & use the structure  
+# Create a package!  
   
 `usethis`<img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="70px" align="right" />
   
@@ -207,11 +208,11 @@ For **reproducible** and **flexible** reporting & documentation, use:   `Knit wi
   
 We need to document our research in a way that is <span style="color:#562457">**reliable**, **reproducible**, & **generalizable**</span>.  
   
-R has a lot of tools to organize and disseminate research in a **systematic** way.  
+R has a lot of tools to organize and disseminate research in a <span style="color:#562457">**systematic**</span> way.  
   
 <br>
   
-.center[<img src="img/devtools.png" height="80px"/> <img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="80px" /> <img src="https://github.com/r-lib/testthat/blob/master/man/figures/logo.png?raw=true" height="80px"/> <img src="https://raw.githubusercontent.com/o2r-project/containerit/master/inst/logo.png" height="70px"/> <img src="https://pkgdown.r-lib.org/reference/figures/logo.png" height="80px" /> <img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="80px"/>]
+.center[<img src="img/devtools.png" height="90px"/> <img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="90px" /> <img src="https://github.com/r-lib/testthat/blob/master/man/figures/logo.png?raw=true" height="90px"/> <img src="https://raw.githubusercontent.com/o2r-project/containerit/master/inst/logo.png" height="90px"/> <img src="https://pkgdown.r-lib.org/reference/figures/logo.png" height="90px" /> <img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="90px"/>]
 
 
 ---
