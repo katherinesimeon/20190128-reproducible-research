@@ -32,7 +32,7 @@ class: title-slide, left, middle
 ---
 class: left, middle
 
-## This is inspired by *multiple* rstudio::conf talks  
+## This is inspired by multiple rstudio::conf talks  
   
 Karthik Ram - [A guide to modern reproducible data science with R](https://github.com/karthik/rstudio2019)  
   
@@ -50,7 +50,7 @@ Charlotte &amp; Hadley Wickham - Building Tidy Tools Workshop
   
 .center[&lt;img src="https://pbs.twimg.com/media/DJ7rFL6XUAcnxLy.jpg:large" height="400px" /&gt;]  
 
-.right[Image: https://twitter.com/kirkdborne]
+  
   
 ---
   
@@ -60,28 +60,146 @@ Charlotte &amp; Hadley Wickham - Building Tidy Tools Workshop
   
 --
   
-* Colleagues (advisor, peers, research assistants...)     
+* For collaboration!  
   
 --
   
-* Reviewers  
+* Dissemination of methods &amp; findings   
   
 --
   
-* *(Anyone really)*
+&lt;br&gt;
+  
+*Ability to repeat and improve techniques*  
   
 --
   
-* Present &amp; Future Self!   
+* Help your present &amp; future self!    
   
----
-class: center, middle  
+--
   
-Reproducibility \(\neq\) Replicability   
+* Allow others to use and give feedback on your code and techniques  
+  
   
 ---
 
-#
+# Good code should be...  
+  
+&lt;img src="https://fluorofinder.com/wp-content/uploads/2017/06/Design.Experiment.Repeat.-Square.png" height="300px" align="right"/&gt;
+  
+--
+  
+1. **Reliable**   
+  
+--
+  
+2. **Reproducible**  
+  
+--
+  
+3. **Flexible &amp; Generalizable**  
+  
+  
+---
+
+# Research Compendium  
+   
+A **systematic** way to organize research data, analyses, and documentation.  
+  
+&lt;br&gt;
+  
+--
+  
+Good research compendia...  
+  
+* Keep to the conventions of collaborators/peers (makes it **generalizable**)  
+  
+--
+  
+* Keep data, methods, and outputs separate (makes it **reliable** &amp; **generalizable**)      
+  
+--
+  
+* Clearly specifies the computational environment to the best of its abilities (makes it **reproducible**)
+  
+&lt;br&gt;
+  
+--
+  
+The structure of an R package already has this!   
+
+---
+
+# An R package as a research compendium    
+    
+
+```r
+SAMPLE_COMPENDIUM  
+    |
+    ├── DESCRIPTION
+    |
+    ├── README.md
+    |
+    ├── LICENSE
+    |
+    ├── data/
+    │   ├── raw_data/       # data obtained from elsewhere
+    │   └── derived_data/   # data generated during the analysis
+    |
+    ├── analysis/           # contains scripts for analyses
+        └── analysis.R
+    |
+    ├── paper/
+    │   ├── paper.Rmd       # this is the main document to edit
+    │   └── references.bib  # this contains the reference list information
+    |
+    ├── figures/            # location of the figures produced by the Rmd
+    |
+    └── templates
+        ├── journal-of-archaeological-science.csl
+        |                   # this sets the style of citations &amp; reference list
+        ├── template.docx   # used to style the output of the paper.Rmd
+        └── template.Rmd
+```
+  
+---
+  
+# Create a package &amp; use the structure  
+  
+`devtools`  
+  
+The error message says don't do this anymore!!
+
+```r
+devtools::create("packagename") 
+```
+  
+&lt;br&gt;
+`usethis`  
+  
+A [package](https://github.com/r-lib/usethis) that automates repetitive tasks in project development.  
+
+```r
+usethis::create_package("packagename")
+```
+  
+&lt;br&gt;
+`rrtools`  
+  
+A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and contains instructions and templates for a tried &amp; true research compendium:  
+
+```r
+create_compendium("packagename")
+```
+  
+---
+  
+# An R Package as a Compendium  
+  
+* Great way to organize and disseminate research in a systematic way  
+* Lots of tools to get this up an running  
+  
+.center[&lt;img src="img/pkg_tools.png" height="300px" /&gt;]
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
