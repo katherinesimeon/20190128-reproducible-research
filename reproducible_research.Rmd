@@ -48,46 +48,21 @@ Charlotte & Hadley Wickham - Building Tidy Tools Workshop
   
 ---
 
-# Research  
+# The motivation  
+  
+Research is hard!  
   
 --
   
-.center[<img src="https://pbs.twimg.com/media/DJ7rFL6XUAcnxLy.jpg:large" height="400px" />]  
+.center[<img src="https://pbs.twimg.com/media/DJ7rFL6XUAcnxLy.jpg:large" height="330px" />]  
 
-  
-  
----
-  
-# The motivation    
-  
-*Clear communication with others*   
-  
 --
   
-* For collaboration!  
-  
---
-  
-* Dissemination of methods & findings   
-  
---
-  
-<br>
-  
-*Ability to repeat and improve techniques*  
-  
---
-  
-* Help your present & future self!    
-  
---
-  
-* Allow others to use and give feedback on your code and techniques  
-  
+.right[*Being organized is important!*]  
   
 ---
 
-# Good code should be...  
+## Good code should be...  
   
 <img src="https://fluorofinder.com/wp-content/uploads/2017/06/Design.Experiment.Repeat.-Square.png" height="300px" align="right"/>
   
@@ -103,6 +78,14 @@ Charlotte & Hadley Wickham - Building Tidy Tools Workshop
   
 3. **Flexible & Generalizable**  
   
+--
+  
+<br>
+  
+## Reproducible research allows us to...  
+  
+* Clearly communicate research methods & findings    
+* Repeat & improve our techniques
   
 ---
 
@@ -187,7 +170,7 @@ usethis::create_package("packagename")
 <br>
 `rrtools`  
   
-A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and contains instructions and templates for a tried & true research compendium:  
+A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and contains instructions and templates for a research compendium:  
 ```{r, eval=FALSE} 
 create_compendium("packagename")
 ```
@@ -205,7 +188,24 @@ create_compendium("packagename")
 
 ---
   
-# Flexible documentation with parameterized reports  
+# Parameterized Reports in RMarkdown  
+  
+For **Reproducible** and **flexible** reporting & documentation, use: `Knit with Parameters...`
+  
+<img src="https://d33wubrfki0l68.cloudfront.net/c9f535d9304ad452638a3f6ef71e4cf7859d6157/7bb8b/lesson-images/params-2-aleutians.png" height="350px" />  
+  
+<img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="70px" align="right" />  
+  
+---
+  
+# Takeaways  
+   
+We need to document our research in a way that is **reliable**, **reproducible**, & **generalizable**.  
+  
+<br>
+   
+There are so many R tools & packages that can help us.
+
   
 
 
