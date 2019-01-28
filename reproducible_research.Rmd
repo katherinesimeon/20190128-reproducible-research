@@ -58,7 +58,7 @@ Research is hard!
 
 --
   
-.right[*Being organized is important!*]  
+.right[Being organized is important!]  
   
 ---
 
@@ -114,7 +114,33 @@ Good research compendia...
 --
   
 The structure of an R package already has this!   
+  
+---
 
+# The R package structure
+  
+```{r, eval=FALSE}  
+A_PACKAGE  
+    |
+    ├── DESCRIPTION         
+    |
+    ├── README.md
+    |
+    ├── NAMESPACE
+    |
+    ├── LICENSE
+    |
+    ├── R/                    # Functions that are in your package
+    │   ├── UsefulFunction1.R       
+    │   └── UsefulFunction2.R   
+    |
+    ├── man/                   # Documentation for functions
+    │   ├── UsefulFunction1.Rd       
+    │   └── UsefulFunction2.Rd 
+    |
+    └── A_package.Rproj     # R project file for your package
+```
+  
 ---
 
 # An R package as a research compendium    
@@ -152,14 +178,6 @@ SAMPLE_COMPENDIUM
   
 # Create a package & use the structure  
   
-`devtools`  
-  
-The error message says don't do this anymore!!
-```{r, eval=FALSE} 
-devtools::create("packagename") 
-```
-  
-<br>
 `usethis`  
   
 A [package](https://github.com/r-lib/usethis) that automates repetitive tasks in project development.  
@@ -175,17 +193,10 @@ A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and c
 create_compendium("packagename")
 ```
   
----
-  
-# An R Package as a Compendium  
-  
-* Great way to organize and disseminate research in a systematic way  
-* Lots of tools to get this up an running  
-  
 <br>
   
-.center[<img src="img/pkg_tools.png" height="300px" />]  
-
+<img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="70px" align="right" />  
+  
 ---
   
 # Parameterized Reports in RMarkdown  
@@ -199,12 +210,12 @@ For **Reproducible** and **flexible** reporting & documentation, use: `Knit with
 ---
   
 # Takeaways  
-   
+  
 We need to document our research in a way that is **reliable**, **reproducible**, & **generalizable**.  
   
-<br>
-   
-There are so many R tools & packages that can help us.
+R has a lot of tools to organize and disseminate research in a **systematic** way.  
+  
+.center[<img src="img/pkg_tools.png" height="300px" />]  
 
   
 

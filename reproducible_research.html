@@ -110,7 +110,34 @@ Good research compendia...
 --
   
 The structure of an R package already has this!   
+  
+---
 
+# The R package structure
+  
+
+```r
+A_PACKAGE  
+    |
+    ├── DESCRIPTION         
+    |
+    ├── README.md
+    |
+    ├── NAMESPACE
+    |
+    ├── LICENSE
+    |
+    ├── R/                    # Functions that are in your package
+    │   ├── UsefulFunction1.R       
+    │   └── UsefulFunction2.R   
+    |
+    ├── man/                   # Documentation for functions
+    │   ├── UsefulFunction1.Rd       
+    │   └── UsefulFunction2.Rd 
+    |
+    └── A_package.Rproj     # R project file for your package
+```
+  
 ---
 
 # An R package as a research compendium    
@@ -149,15 +176,6 @@ SAMPLE_COMPENDIUM
   
 # Create a package &amp; use the structure  
   
-`devtools`  
-  
-The error message says don't do this anymore!!
-
-```r
-devtools::create("packagename") 
-```
-  
-&lt;br&gt;
 `usethis`  
   
 A [package](https://github.com/r-lib/usethis) that automates repetitive tasks in project development.  
@@ -169,23 +187,16 @@ usethis::create_package("packagename")
 &lt;br&gt;
 `rrtools`  
   
-A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and contains instructions and templates for a tried &amp; true research compendium:  
+A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and contains instructions and templates for a research compendium:  
 
 ```r
 create_compendium("packagename")
 ```
   
----
-  
-# An R Package as a Compendium  
-  
-* Great way to organize and disseminate research in a systematic way  
-* Lots of tools to get this up an running  
-  
 &lt;br&gt;
   
-.center[&lt;img src="img/pkg_tools.png" height="300px" /&gt;]  
-
+&lt;img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="70px" align="right" /&gt;  
+  
 ---
   
 # Parameterized Reports in RMarkdown  
@@ -199,12 +210,12 @@ For **Reproducible** and **flexible** reporting &amp; documentation, use: `Knit 
 ---
   
 # Takeaways  
-   
+  
 We need to document our research in a way that is **reliable**, **reproducible**, &amp; **generalizable**.  
   
-&lt;br&gt;
-   
-There are *so* many R tools &amp; packages that help us.
+R has a lot of tools to organize and disseminate research in a systematic way.  
+  
+.center[&lt;img src="img/pkg_tools.png" height="300px" /&gt;]
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
