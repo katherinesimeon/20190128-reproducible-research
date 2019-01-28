@@ -27,10 +27,7 @@ class: title-slide, left, middle, inverse
 
 <h3> Katherine Simeon <br> R-Ladies Chicago</h3>
 
-<br>
-.small[`r fontawesome::fa("github")` [katherinesimeon](https://github.com/katherinesimeon)] <br>
-.small[`r fontawesome::fa("researchgate")` [katherine_simeon](https://www.researchgate.net/profile/Katherine_Simeon)]  
-<br>
+
 
 
 ---
@@ -92,15 +89,15 @@ A **systematic** way to organize research data, analyses, and documentation.
   
 A good research compendium...  
   
-* Keeps to the conventions of collaborators/peers (makes it **generalizable**)  
+* Keeps to the conventions of collaborators/peers (makes it <span style="color:#562457">**generalizable**</span>)  
   
 --
   
-* Keeps data, methods, and outputs separate (makes it **reliable**)      
+* Keeps data, methods, and outputs separate (makes it <span style="color:#562457">**reliable**</span>)      
   
 --
   
-* Clearly specifies the computational environment to the best of its abilities (makes it **reproducible**)
+* Clearly specifies the computational environment to the best of its abilities (makes it <span style="color:#562457">**reproducible**</span>)
   
 <br>
   
@@ -173,7 +170,7 @@ SAMPLE_COMPENDIUM
   
 `usethis`<img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="70px" align="right" />
   
-A [package](https://github.com/r-lib/usethis) that automates repetitive tasks in project development.  
+A [package](https://github.com/r-lib/usethis) that automates repetitive tasks in project development:  
 ```{r, eval=FALSE} 
 usethis::create_package("packagename")
 ```
