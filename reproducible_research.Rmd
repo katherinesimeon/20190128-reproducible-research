@@ -103,7 +103,7 @@ A good research compendium...
   
 --
   
-The structure of an R package already has this!   
+The structure of an R package already has this! 📦  
   
 ---
 
@@ -112,8 +112,8 @@ The structure of an R package already has this!
 ```{r, eval=FALSE}  
 A_PACKAGE  
     |
-    ├── DESCRIPTION         
-    |
+    ├── DESCRIPTION         # Important metadata! 
+    |                       # Makes .Rproj recognized as a package
     ├── README.md
     |
     ├── NAMESPACE
@@ -155,13 +155,8 @@ SAMPLE_COMPENDIUM
     │   ├── paper.Rmd       # this is the main document to edit
     │   └── references.bib  # this contains the reference list information
     |
-    ├── figures/            # location of the figures produced by the Rmd
-    |
-    └── templates
-        ├── journal-of-archaeological-science.csl
-        |                   # this sets the style of citations & reference list
-        ├── template.docx   # used to style the output of the paper.Rmd
-        └── template.Rmd
+    └── figures/            # location of the figures produced by the Rmd
+    
 ```
   
 ---
@@ -201,11 +196,14 @@ For **reproducible** and **flexible** reporting & documentation, use:   `Knit wi
   
 # Takeaways  
   
-We need to document our research in a way that is **reliable**, **reproducible**, & **generalizable**.  
+We need to document our research in a way that is <span style="color:#562457">**reliable**, **reproducible**, & **generalizable**</span>.  
   
 R has a lot of tools to organize and disseminate research in a **systematic** way.  
   
-.center[<img src="img/pkg_tools.png" height="300px" />]  
+<br>
+  
+.center[<img src="img/devtools.png" height="80px"/> <img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="80px" /> <img src="https://github.com/r-lib/testthat/blob/master/man/figures/logo.png?raw=true" height="80px"/> <img src="https://pkgdown.r-lib.org/reference/figures/logo.png" height="80px" /><img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="80px"/>]
+
 
 ---
 class: center, middle, inverse  
