@@ -1,7 +1,11 @@
 # Lightning Talk: Reproducible Research  
   
 Slides for a quick lightning talk for the [January Meetup](https://www.meetup.com/rladies-chicago/events/257346957/) of R-Ladies Chicago.  
-
+  
+  
+See slide deck [here](https://katherinesimeon.github.io/20190128-reproducible-research/).    
+  
+  
   
      
   
