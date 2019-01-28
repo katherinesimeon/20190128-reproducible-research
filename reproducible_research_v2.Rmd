@@ -6,7 +6,6 @@ date: "2018/01/28"
 output:
   xaringan::moon_reader:
     css: ["default", "rladies", "rladies-fonts"]
-    seal: false
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -18,25 +17,9 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-class: title-slide, left, middle, inverse
-
-<h1> Reproducible Research in R </h1>
-
-<br>
-
-
-<h3> Katherine Simeon <br> R-Ladies Chicago</h3>
-
-<br>
-.small[`r fontawesome::fa("github")` [katherinesimeon](https://github.com/katherinesimeon)] <br>
-.small[`r fontawesome::fa("researchgate")` [katherine_simeon](https://www.researchgate.net/profile/Katherine_Simeon)]  
-<br>
-
-
----
 class: left, middle
 
-## This is inspired by multiple rstudio::conf talks  
+# This is inspired by multiple rstudio::conf talks  
   
 Karthik Ram - [A guide to modern reproducible data science with R](https://github.com/karthik/rstudio2019)  
   
@@ -90,13 +73,13 @@ A **systematic** way to organize research data, analyses, and documentation.
   
 --
   
-A good research compendium...  
+Good research compendia...  
   
-* Keeps to the conventions of collaborators/peers (makes it **generalizable**)  
+* Keep to the conventions of collaborators/peers (makes it **generalizable**)  
   
 --
   
-* Keeps data, methods, and outputs separate (makes it **reliable**)      
+* Keep data, methods, and outputs separate (makes it **reliable**)      
   
 --
   
@@ -171,7 +154,7 @@ SAMPLE_COMPENDIUM
   
 # Create a package & use the structure  
   
-`usethis`<img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="70px" align="right" />
+`usethis`  
   
 A [package](https://github.com/r-lib/usethis) that automates repetitive tasks in project development.  
 ```{r, eval=FALSE} 
@@ -183,22 +166,22 @@ usethis::create_package("packagename")
   
 A [package](https://github.com/benmarwick/rrtools) that expands `devtools` and contains instructions and templates for a research compendium:  
 ```{r, eval=FALSE} 
-create_compendium("packagename")
+rrtools::create_compendium("packagename")
 ```
   
 <br>
   
-  
+<img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="70px" align="right" />  
   
 ---
   
 # Parameterized Reports in RMarkdown  
   
-<img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="70px" align="right" />  
-  
-For **reproducible** and **flexible** reporting & documentation, use:   `Knit with Parameters...` 
-  
+For **reproducible** and **flexible** reporting & documentation, use: `Knit with Parameters...`
+
 <img src="https://d33wubrfki0l68.cloudfront.net/c9f535d9304ad452638a3f6ef71e4cf7859d6157/7bb8b/lesson-images/params-2-aleutians.png" height="350px" />  
+See more info [here](https://rmarkdown.rstudio.com/lesson-6.html).
+<img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="70px" align="right" />  
   
 ---
   
@@ -209,16 +192,8 @@ We need to document our research in a way that is **reliable**, **reproducible**
 R has a lot of tools to organize and disseminate research in a **systematic** way.  
   
 .center[<img src="img/pkg_tools.png" height="300px" />]  
-
+  
 ---
-class: center, middle, inverse  
   
-# Thank you!  
+
   
-<br>
-  
-.small[Slides at: `r fontawesome::fa("github")` [katherinesimeon](https://github.com/katherinesimeon)] 
-
-
-
-   
