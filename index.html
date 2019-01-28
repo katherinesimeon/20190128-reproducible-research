@@ -99,7 +99,7 @@ A good research compendium...
   
 --
   
-The structure of an R package already has this!   
+The structure of an R package already has this! 📦  
   
 ---
 
@@ -109,8 +109,8 @@ The structure of an R package already has this!
 ```r
 A_PACKAGE  
     |
-    ├── DESCRIPTION         
-    |
+    ├── DESCRIPTION         # Important metadata! 
+    |                       # Makes .Rproj recognized as a package
     ├── README.md
     |
     ├── NAMESPACE
@@ -153,13 +153,7 @@ SAMPLE_COMPENDIUM
     │   ├── paper.Rmd       # this is the main document to edit
     │   └── references.bib  # this contains the reference list information
     |
-    ├── figures/            # location of the figures produced by the Rmd
-    |
-    └── templates
-        ├── journal-of-archaeological-science.csl
-        |                   # this sets the style of citations &amp; reference list
-        ├── template.docx   # used to style the output of the paper.Rmd
-        └── template.Rmd
+    └── figures/            # location of the figures produced by the Rmd
 ```
   
 ---
@@ -189,23 +183,35 @@ create_compendium("packagename")
   
 ---
   
-# Parameterized Reports in RMarkdown  
+## Documenting the computational environment  
+  
+&lt;img src="https://raw.githubusercontent.com/o2r-project/containerit/master/inst/logo.png" height="70px" align="right" /&gt;  
+  
+Good documentation in the `DESCRIPTION` (particularly for `Depends`, `Imports`, &amp; `Suggests`).  
+  
+`containerit` [packages](https://github.com/o2r-project/containerit) R scripts, session, workspace and all dependencies as a [Docker](https://www.docker.com/) container.  
+  
+--
+  
+## Parameterized reports in RMarkdown  
   
 &lt;img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="70px" align="right" /&gt;  
   
-For **reproducible** and **flexible** reporting &amp; documentation, use:   `Knit with Parameters...` 
-  
-&lt;img src="https://d33wubrfki0l68.cloudfront.net/c9f535d9304ad452638a3f6ef71e4cf7859d6157/7bb8b/lesson-images/params-2-aleutians.png" height="350px" /&gt;  
+For **reproducible** and **flexible** reporting &amp; documentation, use:   `Knit with Parameters...`  
+.center[&lt;img src="img/parameters_rmd.png" height="150px" /&gt;] 
   
 ---
   
 # Takeaways  
   
-We need to document our research in a way that is **reliable**, **reproducible**, &amp; **generalizable**.  
+We need to document our research in a way that is &lt;span style="color:#562457"&gt;**reliable**, **reproducible**, &amp; **generalizable**&lt;/span&gt;.  
   
 R has a lot of tools to organize and disseminate research in a **systematic** way.  
   
-.center[&lt;img src="img/pkg_tools.png" height="300px" /&gt;]  
+&lt;br&gt;
+  
+.center[&lt;img src="img/devtools.png" height="80px"/&gt; &lt;img src="https://raw.githubusercontent.com/r-lib/usethis/master/man/figures/logo.png" height="80px" /&gt; &lt;img src="https://github.com/r-lib/testthat/blob/master/man/figures/logo.png?raw=true" height="80px"/&gt; &lt;img src="https://raw.githubusercontent.com/o2r-project/containerit/master/inst/logo.png" height="70px"/&gt; &lt;img src="https://pkgdown.r-lib.org/reference/figures/logo.png" height="80px" /&gt; &lt;img src="https://bookdown.org/yihui/rmarkdown/images/hex-rmarkdown.png" height="80px"/&gt;]
+
 
 ---
 class: center, middle, inverse  
